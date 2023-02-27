@@ -25,8 +25,8 @@ inquirer.prompt([
     },
     {
       type: 'input',
-      name: 'Credits',
-      message: 'Please proide your list of collaborators if any',
+      name: 'Installation',
+      message: 'Please proide instructions for installation',
     },
     {
         type: 'input',
@@ -35,8 +35,13 @@ inquirer.prompt([
       },
       {
         type: 'input',
-        name: 'Questions',
-        message: 'Please enter your github username and link',
+        name: 'Username',
+        message: 'Please enter your github username',
+      },
+      {
+        type: 'input',
+        name: 'Email',
+        message: 'Please enter your email',
       },
       {
         type: 'input',
@@ -53,7 +58,7 @@ inquirer.prompt([
 
 .then ((response) => {
     return fs.writeFile(`ReadMe.md`, `
-  #${response.Title}
+  # ${response.Title}
 
   # Description
 
@@ -65,7 +70,7 @@ inquirer.prompt([
   -Description (#Description)
   -Installation (#Installation)
   -Usage (#Usage)
-  -Contributions (#Contributions)
+  -Contributing (#Contributions)
   -Tests (#Tests)
   -License (#License)
 
@@ -76,10 +81,10 @@ inquirer.prompt([
 
   ## Usage
 
-  ${response.usage}
+  ${response.Usage}
 
 
-  ## Contributions
+  ## Contributing
 
   ${response.Credits}
 
@@ -92,6 +97,10 @@ inquirer.prompt([
   ## License
 
   The license for this project is ${response.License}
+
+  ## Questions
+  Please reach out if you would like clarification on this project via my Github: github.com/${response.Username}
+  or my email ${response.Email}
   `,
     (error)=>{
         return error
