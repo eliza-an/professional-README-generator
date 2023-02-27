@@ -1,4 +1,4 @@
-const fs = require("fs");
+const fs = require('fs');
 const path = require('path');
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
@@ -6,61 +6,57 @@ const generateMarkdown = require("./utils/generateMarkdown");
 
 
 // array of questions for user
-const pquestionsArray = () =>
-  inquirer.prompt([
+//const questionsArray = () =>
+inquirer.prompt([
     {
       type: 'input',
-      name: 'title',
+      name: '#Title',
       message: 'What is the title of your project?',
     },
     {
       type: 'input',
-      name: 'description',
+      name: '#Description',
       message: 'Where would you like to say in your description?',
     },
     {
       type: 'input',
-      name: 'contents',
+      name: '#Contents',
       message: 'What would you like to have in your Table of Contents?',
     },
     {
       type: 'input',
-      name: 'installation',
+      name: '#Installation',
       message: 'Are there any installation requirements?',
     },
     {
       type: 'input',
-      name: 'usage',
+      name: '#Usage',
       message: 'Please provide instructions for use',
     },
     {
       type: 'input',
-      name: 'credits',
+      name: '#Credits',
       message: 'Please proide your list of collaborators if any',
     },
     {
         type: 'input',
-        name: 'tests',
+        name: '#Tests',
         message: 'Please provide examples on how to run your tests',
       },
       {
         type: 'input',
-        name: 'questions',
+        name: '#Questions',
         message: 'Please enter your github username and link',
       },
      
-  ]);
+  ])
 
+  .then((response) => {
+    console.log(response)
+    fs.writeFile(`ReadMe.md`,JSON.stringify(response), (error)=>{
+        return error
+        ? CSSConditionRule.error 
+        : console.log("Success")
+    })
 
-
-// function to write README file
-function writeToFile(fileName, data) {
-}
-
-// function to initialize program
-function init() {
-
-}
-
-// function call to initialize program
-init();
+})
