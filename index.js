@@ -1,8 +1,6 @@
 const fs = require('fs');
 const path = require('path');
 const inquirer = require("inquirer");
-const generateMarkdown = require("./starter/utils/generateMarkdown");
-
 
 
 // array of questions for user
@@ -92,12 +90,13 @@ ${badge}
 
   ## Table of Contents
 
-  -Description (#Description)
-  -Installation (#Installation)
-  -Usage (#Usage)
-  -Contributing (#Contributions)
-  -Tests (#Tests)
-  -License (#License)
+  -[Description](#Description)
+  -[Installation](#Installation)
+  -[Usage](#Usage)
+  -[Contributing](#Contributions)
+  -[Tests](#Tests)
+  -[License](#License)
+  -[Questions](#Questions)
 
   ## Installation
 
