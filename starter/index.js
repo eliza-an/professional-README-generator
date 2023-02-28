@@ -35,6 +35,11 @@ inquirer.prompt([
       },
       {
         type: 'input',
+        name: 'Contributors',
+        message: 'Please provide contributors if any',
+      },
+      {
+        type: 'input',
         name: 'Username',
         message: 'Please enter your github username',
       },
@@ -44,9 +49,10 @@ inquirer.prompt([
         message: 'Please enter your email',
       },
       {
-        type: 'input',
+        type: 'list',
         name: 'License',
         message: 'Which License would you like to add to this project?',
+        choices: ['Apache License 2.0', 'GNU Geneal Public License', 'MIT License','BSD 3-Clause "simplified" License', 'BSD 3-Clause "New" or "revised" License', 'Boost software License 1.0', 'GNU General Public Licens v2.0', 'GNU Lesser Public License v2.1', 'The Unlicense']
       },
      
      ])
@@ -86,7 +92,7 @@ inquirer.prompt([
 
   ## Contributing
 
-  ${response.Credits}
+  ${response.Contributors}
 
 
   ## Tests
