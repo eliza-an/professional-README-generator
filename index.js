@@ -121,7 +121,7 @@ ${badge}
   The license for this project is ${response.License}
 
   ## Questions
-  Please reach out if you would like clarification on this project via my Github: github.com/${response.Username}
+  Please reach out if you would like clarification on this project via my Github: https://github.com/${response.Username}
   or my email ${response.Email}
   `,
     (error)=>{
