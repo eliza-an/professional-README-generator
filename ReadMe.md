@@ -4,8 +4,7 @@
 
   # Description
   This was one of the challenges in the Trillogy Skills Bootcamp. Its' purpose is to generate a readme locally using a series of prompts.
-![image](https://user-images.githubusercontent.com/118762745/221931347-45894fca-abe3-448a-8acb-4e16ec00f5fe.png)
-![image](https://user-images.githubusercontent.com/118762745/221931591-3e245248-6184-4312-a883-17a5fb072313.png)
+
 
 
   ## Table of Contents
@@ -26,7 +25,8 @@
   ## Usage
 
   To use, simply open the terminal in your VSCode. Next navigate to the directory of the index.js file. Next, simply write node index.js in your terminal and answer the questions you are prompter with and Voila!
-
+![image](https://user-images.githubusercontent.com/118762745/221931347-45894fca-abe3-448a-8acb-4e16ec00f5fe.png)
+![image](https://user-images.githubusercontent.com/118762745/221931591-3e245248-6184-4312-a883-17a5fb072313.png)
 
   ## Contributing
   Although the code for this challenge was written by myself, I would like to thank Trillogy Skills Bootcamp for the starter code. I would also like to thank Andrea Gates for her helpful contibution in our bootcamp slack channel, which helped me rethink how to write my code and allowed me to work more efficiently. Further, I would like to thank Joel Morley for his help in debugging, and finally, I would like to thank https://gist.github.com/lukas-h for the badges in the README
