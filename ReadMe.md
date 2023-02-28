@@ -4,6 +4,8 @@
 
   # Description
   This was one of the challenges in the Trillogy Skills Bootcamp. Its' purpose is to generate a readme locally using a series of prompts.
+![image](https://user-images.githubusercontent.com/118762745/221931347-45894fca-abe3-448a-8acb-4e16ec00f5fe.png)
+![image](https://user-images.githubusercontent.com/118762745/221931591-3e245248-6184-4312-a883-17a5fb072313.png)
 
 
   ## Table of Contents
