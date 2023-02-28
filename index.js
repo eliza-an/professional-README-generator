@@ -84,19 +84,18 @@ ${badge}
   # ${response.Title}
 
   # Description
-
   ${response.Description}
 
 
   ## Table of Contents
 
-  -[Description](#Description)
-  -[Installation](#Installation)
-  -[Usage](#Usage)
-  -[Contributing](#Contributions)
-  -[Tests](#Tests)
-  -[License](#License)
-  -[Questions](#Questions)
+  * [Description](#Description)
+  * [Installation](#Installation)
+  * [Usage](#Usage)
+  * [Contributing](#Contributions)
+  * [Tests](#Tests)
+  * [License](#License)
+  * [Questions](#Questions)
 
   ## Installation
 
@@ -109,7 +108,6 @@ ${badge}
 
 
   ## Contributing
-
   ${response.Contributors}
 
 
